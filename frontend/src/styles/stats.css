@@ -1,0 +1,73 @@
+.dashboard-main {
+  padding: 2rem;
+  background: var(--gray-light);
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--green-primary);
+  animation: fadeInDown 0.6s ease;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Stats Card */
+.stats-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 14px var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease;
+  cursor: pointer;
+}
+
+.stats-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.stats-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: var(--green-accent);
+}
+
+/* Hover Effects */
+.stats-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+/* Interactive Glow */
+.stats-card:hover h3 {
+  color: var(--green-primary);
+}
+
+.stats-card:hover p {
+  color: var(--success-green);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

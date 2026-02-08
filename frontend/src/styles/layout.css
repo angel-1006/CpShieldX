@@ -1,0 +1,94 @@
+/* Navbar */
+.navbar {
+  background: var(--green-primary);
+  color: var(--white);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px var(--shadow-light);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  display: inline-block; /* Ensure it takes up space */
+  color: var(--white); /* Ensure text color is visible */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-item:hover {
+  color: var(--green-light);
+  transform: translateY(-2px);
+}
+/* Sidebar */
+.sidebar {
+  background: var(--green-primary);
+  color: var(--white);
+  width: 220px;
+  min-height: calc(100vh - 60px); /* subtract navbar height */
+  padding: 20px;
+  box-shadow: 4px 0 8px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 60px; /* stays below navbar */
+}
+
+.nav-item {
+  display: block;
+  padding: 12px;
+  margin: 8px 0;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav-item:hover {
+  background: var(--green-accent);
+  transform: translateX(5px);
+}
+
+.nav-item.active {
+  background: var(--green-accent);
+  font-weight: bold;
+}
+
+/* Responsive: collapse sidebar on small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    height: 60px;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+  }
+}

@@ -1,0 +1,61 @@
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-left: 6px solid #2e7d32; /* default green */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.timeline-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.timeline-details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.timeline-action {
+  font-size: 14px;
+  color: #666;
+}
+
+.timeline-result {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.timeline-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Color coding */
+.timeline-card.original {
+  border-left-color: #2e7d32; /* green */
+}
+
+.timeline-card.copied {
+  border-left-color: #c62828; /* red */
+}
+
+.timeline-card.partially-copied-/-modified {
+  border-left-color: #f9a825; /* gold */
+}

@@ -15,6 +15,13 @@ class ContentItem(models.Model):
     extracted_text = models.TextField(blank=True, null=True) 
     created_at = models.DateTimeField(auto_now_add=True)
 
+    STATUS_CHOICES = [
+        ("Pending", "Pending"),
+        ("Approved", "Approved"),
+        ("Rejected", "Rejected"),
+    ]
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
+
     def save(self, *args, **kwargs):
         # Compute SHA-256 when saving
         if self.file and not self.sha256:

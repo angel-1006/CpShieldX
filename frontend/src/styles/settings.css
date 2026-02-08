@@ -1,0 +1,50 @@
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.settings-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.settings-section h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e7d32; /* dark green accent */
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.settings-item label {
+  font-weight: 500;
+  color: #333;
+}
+
+.settings-item span {
+  color: #555;
+}
+
+.save-btn {
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.save-btn:hover {
+  background: #1b5e20;
+}

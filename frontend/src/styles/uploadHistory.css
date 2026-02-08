@@ -1,0 +1,57 @@
+.upload-history {
+  margin-top: 20px;
+}
+
+.upload-history h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Table styling */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.data-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.data-table tr:hover {
+  background: #fafafa;
+}
+
+/* Status colors */
+.status.pending {
+  color: #f9a825;
+  font-weight: 600;
+}
+
+.status.approved {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status.rejected {
+  color: #c62828;
+  font-weight: 600;
+}
+
+/* Empty state row */
+.data-table td[colspan="4"] {
+  text-align: center;
+  color: #757575;
+  font-style: italic;
+}

@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

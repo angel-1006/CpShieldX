@@ -1,0 +1,123 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, var(--green-primary), var(--green-accent)); */
+  animation: backgroundMove 10s infinite alternate;
+}
+
+@keyframes backgroundMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+.auth-card {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px var(--shadow-medium);
+  width: 380px;
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.animate-card {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  color: var(--green-primary);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--gray-dark);
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border: 1px solid var(--green-accent);
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.5);
+  outline: none;
+}
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--white);
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group select:focus {
+  border: 1px solid var(--green-accent);
+  box-shadow: 0 0 8px rgba(39, 174, 96, 0.5);
+  outline: none;
+}
+.btn-gradient {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--green-primary), var(--green-accent));
+  background-color: darkgreen;
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.message.success {
+  color: var(--success-green);
+}
+
+.message.error {
+  color: var(--error-red);
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: var(--green-primary);
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
